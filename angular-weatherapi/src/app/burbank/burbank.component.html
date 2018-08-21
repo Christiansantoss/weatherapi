@@ -1,3 +1,5 @@
 <p>
   burbank works!
 </p>
+{{ location | json }}
+<p>name: {{location.name}}, {{location["sys"].country}}</p>

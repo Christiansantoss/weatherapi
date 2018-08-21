@@ -67,6 +67,46 @@ app.all("*", (req,res,next) => {
 });
 
 
+var js = {
+  "coord": {
+    "lon": -118.33,
+    "lat": 34.18
+  },
+  "weather": [{
+    "id": 800,
+    "main": "Clear",
+    "description": "clear sky",
+    "icon": "01d"
+  }],
+  "base": "stations",
+  "main": {
+    "temp": 301.41,
+    "pressure": 1012,
+    "humidity": 58,
+    "temp_min": 297.15,
+    "temp_max": 308.15
+  },
+  "visibility": 16093,
+  "wind": {
+    "speed": 5.1,
+    "deg": 180
+  },
+  "clouds": {
+    "all": 1
+  },
+  "dt": 1534809480,
+  "sys": {
+    "type": 1,
+    "id": 362,
+    "message": 0.0047,
+    "country": "US",
+    "sunrise": 1534857544,
+    "sunset": 1534905191
+  },
+  "id": 5331835,
+  "name": "Burbank",
+  "cod": 200
+}
 
 
 

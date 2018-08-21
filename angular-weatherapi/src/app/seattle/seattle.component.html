@@ -1,3 +1,15 @@
 <p>
   seattle works!
 </p>
+
+
+{{ location | json }}
+
+<p>name: {{location.name}}, {{location["sys"].country}}</p>
+<p>humidity: {{location.main.humidity}}</p>
+<p>Temperature: {{location.main.temp}}</p>
+
+<p>Temperature Average: {{location.main.temp}}</p>
+
+<p>Temperature High: {{location.main.temp_max}}</p>
+<p>Temperature Low: {{location.main.temp_min}}</p>

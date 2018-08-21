@@ -23,27 +23,15 @@ export class AppComponent implements OnInit {
     // this._route.params.subscribe((params: Params) => {
     //   console.log(params['id'])
     // });
-    this.getWeather();
+    // this.getBurbank();
   }
   goHome() {
     this._router.navigate(["/home"]);
   }
   // get weather for one location
-  getWeather() {
+  getBurbank() {
     console.log("APP COMPONENT TS!!!");
-    this._weatherService.getWeather().subscribe(
-      response => {
-        console.log("API REPSONSE", response);
-        this.location = response;
-      },
-      err => {
-        console.log(err);
-      }
-    );
-  }
-  getSeattle() {
-    console.log("SeattleComponent!!!");
-    this._weatherService.getWeather().subscribe(
+    this._weatherService.getBurbank().subscribe(
       response => {
         console.log("API REPSONSE", response);
         this.location = response;
